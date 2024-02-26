@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foo-Du</title>
+  <link rel="stylesheet" media="screen and (max-width:1000px)" href="phone.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #navbar {
+      position: relative;
+    }
+
+    #logo img {
+      width: 8%;
+      height: 8%;
+    }
+
+    #navbar ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin: 3px 22px;
+      list-style: none;
+    }
+
+    #navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    #navbar ul li {
+      font-size: 1.7rem;
+    }
+
+    #navbar ul li a {
+      color: whitesmoke;
+      display: block;
+      margin: 15px 8px;
+      padding: 3px 3px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+
+    #navbar ul li a:hover {
+      color: black;
+      background: whitesmoke;
+    }
+
+    #home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5px 100px;
+      flex-direction: column;
+      height: 690px;
+      color: whitesmoke;
+      font-size: 1.3rem;
+    }
+
+    #home::before {
+      content: "";
+      background: url(https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZCUyMGRlbGl2ZXJ5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.9;
+    }
+
+    #home h1 {
+      color: whitesmoke;
+      text-align: center;
+      font-size: 2.8rem;
+    }
+
+    .btn {
+      padding: 4px 10px;
+      border: 2px solid rgb(8, 8, 8);
+      background-color: whitesmoke;
+      margin: 13px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 17px;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #services {
+      display: flex;
+      margin: 33px;
+    }
+
+    #services .box {
+      border: 3px solid red;
+      text-align: center;
+      font-size: 14px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 4px 4px 4px 4px;
+      padding: 4px 4px 4px 4px;
+      border-radius: 10px;
+      background-color: rgb(240, 180, 188);
+    }
+
+    #services .box img {
+      height: 160px;
+    }
+
+    .hsecondarycenter {
+      font-size: 27px;
+    }
+
+    #contact {
+      position: relative;
+    }
+
+    #contact::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.7;
+      background-color: coral;
+
+    }
+
+    .hprimarycenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    #contactbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 35px;
+      /* background: url(https://pcu.edu.in/wp-content/uploads/2023/03/Contact-Us.jpg); */
+    }
+
+    #contactbox form {
+      width: 40%;
+    }
+
+    #contactbox label {
+      font-size: 1.2rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    #contactbox input,
+    #contactbox textarea {
+      width: 100%;
+      padding: 0.5rem;
+    }
+
+    #contact {
+      background: url(https://cdn.shopify.com/s/files/1/0278/8642/0047/files/Banner_1920x650_6e3e6f0f-227c-441e-a03d-9d4f49f32144.png?v=1680180435);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="https://foodu.in/wp-content/uploads/2022/10/food_2d_new.png" alt="nhi hai bhai">
+    </div>
+    <ul>
+      <li class="item"><a href="#">Home</a></li>
+      <li class="item"><a href="#">Services</a></li>
+      <li class="item"><a href="#">About us</a></li>
+      <li class="item"><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1 class="hprim">Welcome to Foo-Du</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit neque est voluptatibus facere laborum
+      quod, quis eius, rerum at quam et. Laudantium rem est unde perspiciatis porro a! Inventore!
+    </p>
+    <button class="btn">Order Now</button>
+  </section>
+  <hr>
+  <section class="services-container">
+    <h2 class="hprimarycenter">Our Services</h2>
+    <div id="services">
+      <div class="box">
+        <img
+          src="https://www.netsolutions.com/insights/wp-content/uploads/2021/11/essential-feature-of-building-an-on-demand-food-ordering-app.jpg"
+          alt="nhi hai bhai">
+        <h3 class="hsecondarycenter">Food Ordering</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate distinctio aliquid et, aut
+          incidunt veniam minima. Quisquam et nemo ratione ea, iusto sed quo voluptatum odio nihil fugiat blanditiis!
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://media.istockphoto.com/id/1175505781/photo/arabic-and-middle-eastern-dinner-table-hummus-tabbouleh-salad-fattoush-salad-pita-meat-kebab.jpg?s=2048x2048&w=is&k=20&c=t4nqx6pEwwKWTGePYqQQ_ViwJxDkCVz_jY-0kHygwg4="
+          alt="nhi hai bhai">
+        <h3 class="hsecondarycenter">Bulk Ordering</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate distinctio aliquid et, aut
+          incidunt veniam minima. Quisquam et nemo ratione ea, iusto sed quo voluptatum odio nihil fugiat blanditiis!
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMGNhdGVyaW5nfGVufDB8fDB8fHww&w=1000&q=80"
+          alt="nhi hai bhai">
+        <h3 class="hsecondarycenter">Food catering</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate distinctio aliquid et, aut
+          incidunt veniam minima. Quisquam et nemo ratione ea, iusto sed quo voluptatum odio nihil fugiat blanditiis!
+        </p>
+      </div>
+      <div class="box">
+        <img src="https://img.freepik.com/premium-photo/new-yeareve-party-celebrationhappy-new-year_837518-9544.jpg"
+          alt="nhi hai bhai">
+        <h3 class="hsecondarycenter">Parties</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate distinctio aliquid et, aut
+          incidunt veniam minima. Quisquam et nemo ratione ea, iusto sed quo voluptatum odio nihil fugiat blanditiis!
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Contact">
+    <h1 class="hprimarycenter">Contact Us</h1>
+    <div id="contactbox">
+      <form action="">
+        <div class="formgroup">
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="formgroup">
+          <label for="email">E-Mail: </label>
+          <input type="email" name="name" id="mail" placeholder="Enter your Email">
+        </div>
+        <div class="formgroup">
+          <label for="phone">Phone No </label>
+          <input type="number" name="name" id="phone" placeholder="Enter Your Phone No.">
+        </div>
+        <div class="formgroup">
+          <label for="name">Any Queries</label>
+          <textarea name="Any Queries" id="message" col="10" rows="10"></textarea>
+        </div>
+      </form>
+    </div>
+
+  </section>
+</body>
+
+</html> 
